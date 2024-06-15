@@ -1,15 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const number = document.querySelector(".number");
+    const hexnumber = document.querySelector(".hexnumber");
     const generateBtn = document.querySelector(".generate");
     const resetBtn = document.querySelector(".reset");
 
     const generateNumber = () => {
-        const randomNumber = Math.floor(Math.random() * 1001); // Generate number between 0 and 1000
-        number.textContent = randomNumber;
+        const randomColor = Math.random().toString(16).substring(2, 8);
+        document.body.style.backgroundColor = "#" + randomColor;
+
+        hexnumber.textContent = "#" + randomColor;
     };
 
     const resetNumber = () => {
-        number.textContent = 0;
+        hexnumber.textContent = "#ffffff";
     };
 
     generateBtn.addEventListener("click", generateNumber);
