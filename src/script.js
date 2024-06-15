@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const resetBtn = document.querySelector(".reset");
 
     const generateNumber = () => {
-        const randomColor = Math.random().toString(16).substring(2, 8);
-        document.body.style.backgroundColor = "#" + randomColor;
+        const randomColor = `#${Math.random().toString(16).substring(2, 8)}`;
+        document.body.style.backgroundColor = randomColor;
 
-        hexnumber.textContent = "#" + randomColor;
+        hexnumber.textContent = randomColor;
     };
 
     const resetNumber = () => {
