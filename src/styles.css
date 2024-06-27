@@ -5,7 +5,8 @@
   --light-blue: #005490;
   --light-blue-border: #68d2f9;
   --color-primary: #9d0191;
-  --color-sec: #db6400;
+  --color-secondary: #db6400;
+  --dark-blue: rgba(1, 54, 95, 0.9);
 }
 
 * {
@@ -40,7 +41,7 @@ body {
   color: var(--white);
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(1, 54, 95, 0.9);
+  box-shadow: 0 0 5px var(--dark-blue);
 }
 
 .hexcolor-div>* {
@@ -70,5 +71,5 @@ button.generate {
 }
 
 button.reset {
-  background-color: var(--color-sec);
+  background-color: var(--color-secondary);
 }

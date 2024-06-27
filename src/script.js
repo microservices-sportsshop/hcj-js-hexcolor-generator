@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const resetNumber = () => {
         hexcolor.textContent = "#ffffff";
-        document.body.style.backgroundColor = "#ffffff";
+        document.body.style.backgroundColor = "var(--white)";
     };
 
     generateBtn.addEventListener("click", generateNumber);
