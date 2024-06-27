@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const resetNumber = () => {
-        hexcolor.textContent = "#ffffff";
-        document.body.style.backgroundColor = "var(--white)";
+        const whiteColor = getComputedStyle(document.documentElement).getPropertyValue('--white').trim();
+        hexcolor.textContent = whiteColor;
+        document.body.style.backgroundColor = whiteColor;
     };
 
     generateBtn.addEventListener("click", generateNumber);
